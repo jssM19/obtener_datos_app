@@ -1,16 +1,14 @@
-import 'package:flutter/foundation.dart';
-
 Future<void> main() async {
-  debugPrint('Inicio');
+  print('Inicio');
 
   try {
     final nombre = await obtenerNombre();
-    debugPrint('Nombre: $nombre');
+    print('Nombre: $nombre');
   } catch (e) {
-    debugPrint('Error: $e');
+    print('Error: $e');
   }
 
-  debugPrint('Fin');
+  print('Fin');
 }
 
 Future<String> obtenerNombre() async {
