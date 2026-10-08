@@ -12,6 +12,6 @@ Future<void> main() async {
 }
 
 Future<String> obtenerNombre() async {
-  await Future.delayed(const Duration(seconds: 2));
+  await Future.delayed(const Duration(seconds: 5));
   return 'Ana';
 }
