@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:obtener_datos_app/models/usuario.dart';
 import 'package:obtener_datos_app/service/usuario_service.dart';
+import 'package:obtener_datos_app/screens/usuario_detalle_page.dart';
 
 class UsuariosPage extends StatefulWidget {
   const UsuariosPage({super.key});
@@ -72,6 +73,14 @@ class _UsuariosPageState extends State<UsuariosPage> {
                 title: Text(usuario.nombre),
                 subtitle: Text(usuario.email),
                 trailing: const Icon(Icons.chevron_right),
+                onTap: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (_) => UsuarioDetallePage(usuario: usuario),
+                    ),
+                  );
+                },
               );
             },
           );
