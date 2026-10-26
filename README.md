@@ -1,5 +1,9 @@
 # obtener_datos_app
 
+| Listado de usuarios | Detalle de usuario |
+| ------------------- | ------------------ |
+| ![Listado de usuarios](assets/images/captura-lista-usuarios.png) | ![Detalle de usuario](assets/images/captura-detalle-usuario.png) |
+
 Aplicación Flutter de ejemplo que consume la API pública de [JSONPlaceholder](https://jsonplaceholder.typicode.com/) para obtener un listado de usuarios y mostrar su información de detalle.
 
 Sirve como práctica de los conceptos fundamentales de Flutter:
